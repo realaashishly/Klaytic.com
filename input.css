@@ -455,6 +455,31 @@ p {
   display: inline-block;
 }
 
+._2 {
+  background-color: #3e89ff
+}
+
+._3 {
+  background-color: #27dab7
+}
+
+._4 {
+  color: var(--black);
+  background-color: #ffdc26
+}
+
+._5 {
+  background-color: #fb421f
+}
+
+._6 {
+  background-color: #9f26ff
+}
+
+.more {
+  background-color: #000
+}
+
 .image-87 {
   border-radius: 8px;
   width: 100%;
