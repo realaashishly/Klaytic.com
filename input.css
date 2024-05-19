@@ -444,7 +444,7 @@ p {
 }
 
 .scope__pill {
-  color: var(--white);
+  color: var(--primary-background);
   text-align: center;
   background-color: #ff90e7;
   border-radius: 100vw;
