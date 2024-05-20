@@ -1682,8 +1682,8 @@ p {
   border-radius: 36px;
   margin-left: auto;
   margin-right: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
   /* background: url("https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/newMbgV.png?raw=true"); */
 }
 
