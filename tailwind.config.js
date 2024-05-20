@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'desktopBG' : "url('')",
-        'MobileBG' : "url('')",
+        'desktopBG' : "url('https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/bg.PNG?raw=true')",
+        'MobileBG' : "url('https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/newMbgV.png?raw=true')",
       }
     },
     fontFamily: {

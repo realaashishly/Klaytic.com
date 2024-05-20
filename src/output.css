@@ -1114,8 +1114,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'https\:\/\/github\.com\/realaashishly\/Klaytic\.com\/blob\/main\/src\/assets\/newMbgV\.png\?raw\=true\'\)\] {
+  background-image: url('https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/newMbgV.png?raw=true');
 }
 
 .from-black {
@@ -1680,7 +1688,7 @@ p {
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
-  background: url("https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/newMbgV.png?raw=true");
+  /* background: url("https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/newMbgV.png?raw=true"); */
 }
 
 #live {
@@ -2362,6 +2370,14 @@ p {
 
   .md\:gap-\[50px\] {
     gap: 50px;
+  }
+
+  .md\:bg-\[url\] {
+    background-color: url;
+  }
+
+  .md\:bg-\[url\(\'https\:\/\/github\.com\/realaashishly\/Klaytic\.com\/blob\/main\/src\/assets\/bg\.PNG\?raw\=true\'\)\] {
+    background-image: url('https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/bg.PNG?raw=true');
   }
 
   .md\:px-16 {
