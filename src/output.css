@@ -1114,28 +1114,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[url\] {
-  background-color: url;
-}
-
 .bg-\[url\(\'https\:\/\/github\.com\/realaashishly\/Klaytic\.com\/blob\/main\/src\/assets\/newMbgV\.png\?raw\=true\'\)\] {
   background-image: url('https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/newMbgV.png?raw=true');
 }
 
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-
-.bg-\[url\(\'https\:\/\/github\.com\/realaashishly\/Klaytic\.com\/blob\/main\/src\/assets\/newMbgH\.png\?raw\=true\'\)\] {
-  background-image: url('https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/newMbgH.png?raw=true');
 }
 
 .from-black {
@@ -1898,7 +1882,7 @@ p {
 }
 
 .hiw__icon-wrapper.finger {
-  background-image: url(https://assets-global.website-files.com/5837424ae11409586f837994/65de6fbe381ad6cc0f9b49d6_59.svg);
+  /* background-image: url(https://assets-global.website-files.com/5837424ae11409586f837994/65de6fbe381ad6cc0f9b49d6_59.svg); */
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;

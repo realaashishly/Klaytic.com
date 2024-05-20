@@ -457,7 +457,7 @@ p {
 }
 
 .hiw__icon-wrapper.finger {
-  background-image: url(https://assets-global.website-files.com/5837424ae11409586f837994/65de6fbe381ad6cc0f9b49d6_59.svg);
+  /* background-image: url(https://assets-global.website-files.com/5837424ae11409586f837994/65de6fbe381ad6cc0f9b49d6_59.svg); */
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
