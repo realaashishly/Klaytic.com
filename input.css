@@ -138,19 +138,21 @@ p {
 
 .hero-button span {
   border-radius: 12px;
+  background: linear-gradient(to right bottom, #fff 0%, #ffd18c 18%, #ff6b00 39%, #8beaff 57%, #ffede0 67%, #fff 83%);
   padding: 22px 54px;
   text-shadow: 0px 0px 20px #4b4b4b;
   width: 100%;
   /* display: flex; */
+  color: #000;
   align-items: center;
   gap: 12px;
   transition: all 0.3s;
-  background-image: linear-gradient(to right, #00F260, #f79dee, #0575E6, #64f38c,#e9e93e);
+  /* background-image: linear-gradient(to right, #00F260, #f79dee, #0575E6, #64f38c,#e9e93e); */
   -webkit-background-clip: text;
   color: transparent;
   background-size: 300%;
   background-position: -100%;
-  animation: animatedText 3s infinite alternate-reverse;
+  /* animation: animatedText 3s infinite alternate-reverse; */
 }
 
 .button-overlay {
