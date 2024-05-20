@@ -1679,7 +1679,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background: url("https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/bgg.png?raw=true");
 }
 
