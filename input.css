@@ -31,6 +31,7 @@
 }
 
 
+
 h1 {
   margin-bottom: 24px;
   letter-spacing: -5px;
@@ -59,23 +60,115 @@ p {
   display: flex;
 }
 
-.button {
+/* .button {
   color: var(--primary-background);
   background-image: linear-gradient(#000, #292929);
   border: 1px solid #000;
   border-radius: 12px;
   padding: 22px 54px;
   font-family: Brockmann Webfont, sans-serif;
-  transition: box-shadow 0.6s, background-color 0.6s;
+  transition: all 0.6s, background-color 0.6s;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.31),
     inset 0 2px 1px rgba(255, 255, 255, 0.5);
-}
+} */
 
-.button:hover {
+/* .button:hover {
   background-image: linear-gradient(#292929, #292929);
   box-shadow: 0 7px 8px rgba(0, 0, 0, 0.31),
     inset 0 2px 1px rgba(255, 255, 255, 0.5);
+} */
+
+
+.button {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ecd448;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+ }
+ 
+ .button:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #ff6700;
+  top: 50%;
+  transform: skewX(30deg) translate(-280%, -50%);
+  transition: all 0.5s;
+  overflow: hidden;
+ }
+ 
+ .button:hover {
+  background-color: #4cc9f0;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+ }
+ 
+ .button:hover::before {
+  transform: skewX(30deg) translate(200%, -50%);
+  transition-delay: 0.1s;
+  overflow: hidden;
+ }
+ 
+ .button:active {
+  transform: scale(0.9);
+ }
+
+ .hero-button {
+  font-size: 19px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);
+  color: rgb(218, 218, 218);
+  border: none;
+  padding: 2px;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
+
+.hero-button span {
+  border-radius: 12px;
+  padding: 22px 54px;
+  text-shadow: 0px 0px 20px #4b4b4b;
+  width: 100%;
+  /* display: flex; */
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s;
+  background-image: linear-gradient(to right, #00F260, #f79dee, #0575E6, #64f38c,#e9e93e);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  background-position: -100%;
+  animation: animatedText 3s infinite alternate-reverse;
+}
+
+.button-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-conic-gradient(rgb(48, 47, 47) 0.0000001%, rgb(51, 51, 51) 0.000104%) 60% 60%/600% 600%;
+  filter: opacity(10%) contrast(105%);
+  -webkit-filter: opacity(10%) contrast(105%);
+}
+
+@keyframes animatedText {
+  to {
+    background-position: 100%;
+  }
+}
+
+
 
 /* FLOATING NAVIGATION */
 
@@ -161,15 +254,13 @@ p {
 /* HERO SECTION */
 
 .inner-frame {
-  background-color: #f6f2ea;
-  background-image: url(https://assets-global.website-files.com/5837424ae11409586f837994/65da2485ff5fcdc97cd23ac3_dots.svg),
-    url(./assets/Background.png);
-  background-position: 0 0, 0 0;
-  background-size: auto, auto;
   border-radius: 36px;
   margin-left: auto;
   margin-right: auto;
+  background-repeat: no-repeat; background-size: cover;
+  background: url("./src/assets/bg.PNG");
 }
+
 
 #live {
   height: 15px;
@@ -451,6 +542,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 1rem 1.5rem;
+  cursor: pointer;
   font-family: Brockmann Webfont, sans-serif;
   display: inline-block;
 }
@@ -479,6 +571,20 @@ p {
 .more {
   background-color: #000
 }
+
+.pill__button:hover {
+  transition: 0.3s;
+  margin-top: -20px;
+  animation-name: button_animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+ .pill__button:active {
+  transform: scale(0.97);
+ }
+
+ 
 
 .image-87 {
   border-radius: 8px;
