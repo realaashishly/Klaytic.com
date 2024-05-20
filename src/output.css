@@ -1678,9 +1678,11 @@ p {
   border-radius: 36px;
   margin-left: auto;
   margin-right: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: url("https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/bg1.png?raw=true");
+  #hero{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background: url("https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/bg1.png?raw=true");
+  }
 }
 
 #live {
