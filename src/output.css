@@ -2372,6 +2372,10 @@ p {
     background-image: url('https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/bg%20-%20Copy.PNG?raw=true');
   }
 
+  .md\:bg-\[url\(\'https\:\/\/github\.com\/realaashishly\/Klaytic\.com\/blob\/main\/src\/assets\/Background\.png\?raw\=true\'\)\] {
+    background-image: url('https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/Background.png?raw=true');
+  }
+
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
