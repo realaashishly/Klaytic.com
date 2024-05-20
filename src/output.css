@@ -1123,16 +1123,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'https\:\/\/github\.com\/realaashishly\/Klaytic\.com\/blob\/main\/src\/assets\/Background\.png\?raw\=true\'\)\] {
+  background-image: url('https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/Background.png?raw=true');
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'https\:\/\/github\.com\/realaashishly\/Klaytic\.com\/blob\/main\/src\/assets\/Background\.png\?raw\=true\'\)\] {
-  background-image: url('https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/Background.png?raw=true');
 }
 
 .from-\[\#00f0ff\] {
@@ -1383,6 +1383,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.font-Brockmann {
+  font-family: Brockmann, sans-serif;
 }
 
 .text-\[12px\] {
