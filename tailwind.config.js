@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'desktopBG' : "url('')",
+        'MobileBG' : "url('')",
+      }
+    },
     fontFamily: {
       'Brockmann' : ['Brockmann', 'sans-serif'],
     }
