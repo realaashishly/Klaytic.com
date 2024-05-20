@@ -1687,10 +1687,6 @@ p {
   /* background: url("https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/newMbgV.png?raw=true"); */
 }
 
-#hero{
-  background:  url('https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/bg4.png?raw=true')
-}
-
 #live {
   height: 15px;
   width: 15px;
@@ -2370,6 +2366,10 @@ p {
 
   .md\:gap-\[50px\] {
     gap: 50px;
+  }
+
+  .md\:bg-\[url\(\'https\:\/\/github\.com\/realaashishly\/Klaytic\.com\/blob\/main\/src\/assets\/bg\%20-\%20Copy\.PNG\?raw\=true\'\)\] {
+    background-image: url('https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/bg%20-%20Copy.PNG?raw=true');
   }
 
   .md\:px-16 {
