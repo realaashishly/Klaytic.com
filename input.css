@@ -1,6 +1,7 @@
 @font-face {
   font-family: Brockmann;
-  src: url('https://github.com/realaashishly/Klaytic.com/raw/main/src/assets/brockmann-medium-webfont.ttf') format('ttf');
+  src: url("https://github.com/realaashishly/Klaytic.com/raw/main/src/assets/brockmann-medium-webfont.ttf")
+    format("ttf");
 }
 
 @tailwind base;
@@ -29,8 +30,6 @@
   box-sizing: border-box;
   font-family: var(--heading);
 }
-
-
 
 h1 {
   margin-bottom: 24px;
@@ -78,7 +77,6 @@ p {
     inset 0 2px 1px rgba(255, 255, 255, 0.5);
 } */
 
-
 .button {
   padding: 1.1em 2em;
   background: none;
@@ -93,9 +91,9 @@ p {
   background-color: #ecd448;
   font-weight: bolder;
   box-shadow: 0 2px 0 2px #000;
- }
- 
- .button:before {
+}
+
+.button:before {
   content: "";
   position: absolute;
   width: 100px;
@@ -105,28 +103,33 @@ p {
   transform: skewX(30deg) translate(-280%, -50%);
   transition: all 0.5s;
   overflow: hidden;
- }
- 
- .button:hover {
+}
+
+.button:hover {
   background-color: #4cc9f0;
   color: #fff;
   box-shadow: 0 2px 0 2px #0d3b66;
- }
- 
- .button:hover::before {
+}
+
+.button:hover::before {
   transform: skewX(30deg) translate(200%, -50%);
   transition-delay: 0.1s;
   overflow: hidden;
- }
- 
- .button:active {
-  transform: scale(0.9);
- }
+}
 
- .hero-button {
+.button:active {
+  transform: scale(0.9);
+}
+
+.hero-button {
   font-size: 19px;
   border-radius: 12px;
-  background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(56, 56, 56) 0%,
+    rgb(36, 36, 36) 66%,
+    rgb(41, 41, 41) 100%
+  );
   color: rgb(218, 218, 218);
   border: none;
   padding: 2px;
@@ -138,7 +141,15 @@ p {
 
 .hero-button span {
   border-radius: 12px;
-  background: linear-gradient(to right bottom, #fff 0%, #ffd18c 18%, #ff6b00 39%, #8beaff 57%, #ffede0 67%, #fff 83%);
+  background: linear-gradient(
+    to right bottom,
+    #fff 0%,
+    #ffd18c 18%,
+    #ff6b00 39%,
+    #8beaff 57%,
+    #ffede0 67%,
+    #fff 83%
+  );
   padding: 22px 54px;
   text-shadow: 0px 0px 20px #4b4b4b;
   width: 100%;
@@ -159,7 +170,11 @@ p {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: repeating-conic-gradient(rgb(48, 47, 47) 0.0000001%, rgb(51, 51, 51) 0.000104%) 60% 60%/600% 600%;
+  background: repeating-conic-gradient(
+      rgb(48, 47, 47) 0.0000001%,
+      rgb(51, 51, 51) 0.000104%
+    )
+    60% 60%/600% 600%;
   filter: opacity(10%) contrast(105%);
   -webkit-filter: opacity(10%) contrast(105%);
 }
@@ -169,8 +184,6 @@ p {
     background-position: 100%;
   }
 }
-
-
 
 /* FLOATING NAVIGATION */
 
@@ -204,20 +217,7 @@ p {
   transition: all 0.2s;
 }
 
-.floating-nav__link:hover {
-  color: #000;
-  background-color: #ffdc26;
-  border-radius: 50px;
-}
-
-.floating-nav__link.w--current {
-  color: #000;
-  background-color: #ffdc26;
-  border-radius: 60px;
-  padding-bottom: 20px;
-}
-
-.w--current{
+.w--current {
   background-color: #ffdc26;
   color: #000;
 }
@@ -253,19 +253,46 @@ p {
   position: relative;
 }
 
+nav .spotLight {
+  position: absolute;
+  top: 0;
+  height: 5px;
+  border-radius: 5px;
+  background: #fff;
+  transition: left 400ms ease, width 400ms ease;
+  z-index: 10;
+}
+
+nav .lightRay {
+  position: absolute;
+  left: -39.5%;
+  top: 5px;
+  width: 180%;
+  height: 80px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) -50%,
+    rgba(255, 255, 255, 0) 90%
+  );
+  clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);
+  pointer-events: none;
+}
+
 /* HERO SECTION */
 
 .inner-frame {
   border-radius: 36px;
   margin-left: auto;
   margin-right: auto;
-  background-repeat: repeat; 
-  background-size: contain;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   /* background: url("https://github.com/realaashishly/Klaytic.com/blob/main/src/assets/newMbgV.png?raw=true"); */
-  
 }
-
-
 
 #live {
   height: 15px;
@@ -317,7 +344,7 @@ p {
   display: flex;
   position: relative;
   left: 0;
-  animation: scrollText 10s infinite linear;
+  animation: scrollText 20s infinite linear;
 }
 
 @keyframes scrollText {
@@ -553,28 +580,28 @@ p {
 }
 
 ._2 {
-  background-color: #3e89ff
+  background-color: #3e89ff;
 }
 
 ._3 {
-  background-color: #27dab7
+  background-color: #27dab7;
 }
 
 ._4 {
   color: var(--primary-black-color);
-  background-color: #ffdc26
+  background-color: #ffdc26;
 }
 
 ._5 {
-  background-color: #fb421f
+  background-color: #fb421f;
 }
 
 ._6 {
-  background-color: #9f26ff
+  background-color: #9f26ff;
 }
 
 .more {
-  background-color: #000
+  background-color: #000;
 }
 
 .pill__button:hover {
@@ -585,17 +612,14 @@ p {
   animation-iteration-count: infinite;
 }
 
- .pill__button:active {
+.pill__button:active {
   transform: scale(0.97);
- }
-
- 
+}
 
 .image-87 {
   border-radius: 8px;
   width: 100%;
 }
-
 
 /* PRICING */
 
@@ -614,9 +638,9 @@ p {
   position: relative;
   overflow: hidden;
   transform: rotate(0);
-  box-shadow: 0 20px 30px rgba(0, 0, 0, .34), 0 50px 50px rgba(0, 0, 0, .2), inset 0 2px 1px rgba(255, 255, 255, .5);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.34), 0 50px 50px rgba(0, 0, 0, 0.2),
+    inset 0 2px 1px rgba(255, 255, 255, 0.5);
 }
-
 
 /* FAQ */
 
@@ -635,7 +659,6 @@ p {
   transition: transform 0.3s ease;
 }
 
-
 /* PRODUCTS */
 
 .funky__logo {
@@ -646,25 +669,24 @@ p {
 
 @media screen and (max-width: 479px) {
   .funky__logo {
-      margin-bottom: 20px;
-      margin-right: 0;
+    margin-bottom: 20px;
+    margin-right: 0;
   }
 }
 
 @media screen and (max-width: 479px) {
   .funky__logo.verizon {
-      height: 20px;
-      margin-right: 0;
+    height: 20px;
+    margin-right: 0;
   }
 }
 
 @media screen and (max-width: 479px) {
   .funky__logo.chase {
-      height: 18px;
-      margin-right: 0;
+    height: 18px;
+    margin-right: 0;
   }
 }
-
 
 /* FOOTER MARQUE */
 

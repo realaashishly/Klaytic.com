@@ -7,21 +7,51 @@ const proBtn = document.getElementById("proBtn");
 const standardPrice = document.getElementById("standard-membership");
 const proPrice = document.getElementById("pro-membership");
 
-document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll(".floating-nav__link");
+const links = document.querySelectorAll("nav a");
+const light = document.querySelector("nav .spotLight");
+let currentActive = document.querySelector("nav a.active");
 
-  navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      // Remove 'active-link' class from all links
-      navLinks.forEach((otherLink) => {
-        otherLink.classList.remove("w--current");
-      });
+function moveSpotlight(target) {
+  // Adjust the size of the spotlight to match the target link
+  light.style.width = `${target.offsetWidth}px`;
+  // Center the spotlight over the target link
+  light.style.left = `${target.offsetLeft}px`;
+}
 
-      // Add 'active-link' class to the clicked link
-      link.classList.add("w--current");
-    });
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    // Remove active class from the current active link
+    if (currentActive) {
+      currentActive.classList.remove("active");
+    }
+    // Add active class to the clicked link
+    e.target.classList.add("active");
+    currentActive = e.target;
+    moveSpotlight(e.target);
   });
 });
+
+// Initialize the spotlight position based on the active link
+if (currentActive) {
+  moveSpotlight(currentActive);
+}
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const navLinks = document.querySelectorAll(".floating-nav__link");
+
+//   navLinks.forEach((link) => {
+//     link.addEventListener("click", () => {
+//       // Remove 'active-link' class from all links
+//       navLinks.forEach((otherLink) => {
+//         otherLink.classList.remove("w--current");
+//       });
+
+//       // Add 'active-link' class to the clicked link
+//       link.classList.add("w--current");
+//     });
+//   });
+// });
 
 let tl = gsap.timeline();
 tl.to(container, {
