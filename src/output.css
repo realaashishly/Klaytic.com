@@ -1,8 +1,7 @@
 @font-face {
   font-family: Brockmann;
 
-  src: url("https://github.com/realaashishly/Klaytic.com/raw/main/src/assets/brockmann-medium-webfont.ttf")
-    format("ttf");
+  src: url("./src/assets/brockmann-medium.otf");
 }
 
 /*
