@@ -1,7 +1,11 @@
 @font-face {
   font-family: Brockmann;
 
-  src: url("./src/assets/brockmann-medium.otf");
+  src: url('./src/assets/fonts/brockmann-medium.otf') format("opentype"),
+  url("/src/assets/fonts/brockmann-medium.ttf") format("truetype"),
+  url("./src/assets/fonts/brockmann-medium.woff") format("woff"),
+  url("./src/assets/fonts/brockmann-medium.woff2") format("woff2"),
+  url("./src/assets/fonts/brockmann-medium.eot"), format("eot");
 }
 
 /*
@@ -1385,10 +1389,6 @@ video {
   text-align: center;
 }
 
-.font-Brockmann {
-  font-family: Brockmann, sans-serif;
-}
-
 .font-Montserrat {
   font-family: Montserrat, sans-serif;
 }
@@ -1576,7 +1576,7 @@ video {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--heading);
+  /* font-family: var(--heading); */
 }
 
 h1 {
