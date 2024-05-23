@@ -1389,6 +1389,10 @@ video {
   font-family: Brockmann, sans-serif;
 }
 
+.font-Montserrat {
+  font-family: Montserrat, sans-serif;
+}
+
 .text-\[12px\] {
   font-size: 12px;
 }
@@ -2578,6 +2582,10 @@ nav .lightRay {
 
   .md\:pt-\[110px\] {
     padding-top: 110px;
+  }
+
+  .md\:font-Brockmann {
+    font-family: Brockmann, sans-serif;
   }
 
   .md\:text-\[15px\] {

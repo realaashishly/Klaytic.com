@@ -10,6 +10,7 @@ module.exports = {
     },
     fontFamily: {
       'Brockmann' : ['Brockmann', 'sans-serif'],
+      'Montserrat' : ["Montserrat", 'sans-serif'],
     }
   },
   plugins: [],
