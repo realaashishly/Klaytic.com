@@ -614,10 +614,6 @@ video {
   position: relative;
 }
 
-.-right-8 {
-  right: -2rem;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -690,26 +686,6 @@ video {
   top: 93%;
 }
 
-.top-\[99\%\] {
-  top: 99%;
-}
-
-.-left-8 {
-  left: -2rem;
-}
-
-.right-8 {
-  right: 2rem;
-}
-
-.-left-0 {
-  left: -0px;
-}
-
-.top-\[9\%\] {
-  top: 9%;
-}
-
 .top-full {
   top: 100%;
 }
@@ -765,10 +741,6 @@ video {
 
 .mb-0 {
   margin-bottom: 0px;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .mb-4 {
@@ -899,10 +871,6 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -917,6 +885,10 @@ video {
 
 .w-\[140px\] {
   width: 140px;
+}
+
+.w-\[14vw\] {
+  width: 14vw;
 }
 
 .w-\[160px\] {
@@ -959,10 +931,6 @@ video {
   width: 34vw;
 }
 
-.w-\[350\%\] {
-  width: 350%;
-}
-
 .w-\[38vw\] {
   width: 38vw;
 }
@@ -973,6 +941,10 @@ video {
 
 .w-\[50vw\] {
   width: 50vw;
+}
+
+.w-\[640\%\] {
+  width: 640%;
 }
 
 .w-\[700vw\] {
@@ -1002,30 +974,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[1vw\] {
-  width: 1vw;
-}
-
-.w-\[14vw\] {
-  width: 14vw;
-}
-
-.w-\[12vw\] {
-  width: 12vw;
-}
-
-.w-\[10vw\] {
-  width: 10vw;
-}
-
-.w-\[17vw\] {
-  width: 17vw;
-}
-
-.w-\[15vw\] {
-  width: 15vw;
 }
 
 .min-w-\[250\%\] {
@@ -1155,14 +1103,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
-.overflow-y-hidden {
-  overflow-y: hidden;
 }
 
 .rounded-\[12px\] {
@@ -1305,6 +1245,11 @@ video {
   padding-right: 1.75rem;
 }
 
+.px-\[14px\] {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
 .px-\[30px\] {
   padding-left: 30px;
   padding-right: 30px;
@@ -1353,26 +1298,6 @@ video {
 .py-\[9px\] {
   padding-top: 9px;
   padding-bottom: 9px;
-}
-
-.px-\[\] {
-  padding-left: ;
-  padding-right: ;
-}
-
-.px-\[5\] {
-  padding-left: 5;
-  padding-right: 5;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.px-\[14px\] {
-  padding-left: 14px;
-  padding-right: 14px;
 }
 
 .pb-10 {
@@ -2010,14 +1935,14 @@ nav .lightRay {
 /* HERO SECTION */
 
 .inner-frame {
+  border-radius: 36px;
   margin-left: auto;
   margin-right: auto;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
-  background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+  background-image: radial-gradient(rgba(12, 12, 12, 0.111) 2px, transparent 0);
   background-size: 30px 30px;
   background-position: -5px -5px;
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -2694,14 +2619,6 @@ nav .lightRay {
 }
 
 @media (min-width: 768px) {
-  .md\:left-0 {
-    left: 0px;
-  }
-
-  .md\:right-0 {
-    right: 0px;
-  }
-
   .md\:top-0 {
     top: 0px;
   }
@@ -2881,10 +2798,6 @@ nav .lightRay {
 
   .md\:pl-\[14px\] {
     padding-left: 14px;
-  }
-
-  .md\:pr-\[14px\] {
-    padding-right: 14px;
   }
 
   .md\:pt-\[110px\] {
