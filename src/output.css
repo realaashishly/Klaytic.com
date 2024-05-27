@@ -839,10 +839,6 @@ video {
   margin-top: 8px;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .block {
   display: block;
 }
@@ -1168,6 +1164,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -1222,6 +1223,14 @@ video {
 
 .p-\[60px\] {
   padding: 60px;
+}
+
+.p-\[24p\] {
+  padding: 24p;
+}
+
+.p-\[24px\] {
+  padding: 24px;
 }
 
 .px-10 {
@@ -1454,6 +1463,22 @@ video {
   line-height: 1rem;
 }
 
+.text-\[35vw\] {
+  font-size: 35vw;
+}
+
+.text-\[30vw\] {
+  font-size: 30vw;
+}
+
+.text-\[28vw\] {
+  font-size: 28vw;
+}
+
+.text-\[25vw\] {
+  font-size: 25vw;
+}
+
 .font-\[500\] {
   font-weight: 500;
 }
@@ -1519,6 +1544,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .underline {
@@ -3020,6 +3049,10 @@ nav .lightRay {
 
   .xl\:w-\[60\%\] {
     width: 60%;
+  }
+
+  .xl\:w-\[80\%\] {
+    width: 80%;
   }
 
   .xl\:pt-\[150px\] {
