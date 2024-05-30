@@ -1,10 +1,10 @@
 @font-face {
   font-family: Brockmann;
-  src: url('./src/assets/fonts/brockmann-medium.otf') format("opentype"),
-  url("/src/assets/fonts/brockmann-medium.ttf") format("truetype"),
-  url("./src/assets/fonts/brockmann-medium.woff") format("woff"),
-  url("./src/assets/fonts/brockmann-medium.woff2") format("woff2"),
-  url("./src/assets/fonts/brockmann-medium.eot"), format("eot");
+  src: url('./assets/fonts/brockmann-medium.otf') format("opentype"),
+  url("./assets/fonts/brockmann-medium.ttf") format("truetype"),
+  url("./assets/fonts/brockmann-medium.woff") format("woff"),
+  url("./assets/fonts/brockmann-medium.woff2") format("woff2"),
+  url("./assets/fonts/brockmann-medium.eot"), format("eot");
 }
 
 @tailwind base;
