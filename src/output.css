@@ -750,16 +750,8 @@ video {
   margin-bottom: 10px;
 }
 
-.mb-\[16px\] {
-  margin-bottom: 16px;
-}
-
 .mb-\[32px\] {
   margin-bottom: 32px;
-}
-
-.mb-\[40px\] {
-  margin-bottom: 40px;
 }
 
 .mb-\[60px\] {
@@ -814,10 +806,6 @@ video {
   margin-top: 40px;
 }
 
-.mt-\[44px\] {
-  margin-top: 44px;
-}
-
 .mt-\[60px\] {
   margin-top: 60px;
 }
@@ -866,8 +854,8 @@ video {
   height: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-64 {
@@ -884,10 +872,6 @@ video {
 
 .w-\[14vw\] {
   width: 14vw;
-}
-
-.w-\[160px\] {
-  width: 160px;
 }
 
 .w-\[18vw\] {
@@ -1112,9 +1096,18 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .border-gray-600 {
@@ -1125,11 +1118,6 @@ video {
 .border-zinc-700 {
   --tw-border-opacity: 1;
   border-color: rgb(63 63 70 / var(--tw-border-opacity));
-}
-
-.bg-\[\#ff90e7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 144 231 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -1145,10 +1133,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#ye\] {
-  background-color: #ye;
 }
 
 .bg-yellow-600 {
@@ -1299,6 +1283,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .pb-\[100px\] {
   padding-bottom: 100px;
 }
@@ -1335,6 +1323,10 @@ video {
   padding-top: 1rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
 .pt-\[100px\] {
   padding-top: 100px;
 }
@@ -1349,14 +1341,6 @@ video {
 
 .pt-\[90px\] {
   padding-top: 90px;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
 }
 
 .text-left {
@@ -1506,8 +1490,8 @@ video {
   letter-spacing: -1px;
 }
 
-.tracking-\[-3px\] {
-  letter-spacing: -3px;
+.tracking-\[-2px\] {
+  letter-spacing: -2px;
 }
 
 .tracking-wide {
@@ -1568,7 +1552,8 @@ video {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: var(--heading); */
+  font-family: var(--heading);
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -1952,7 +1937,7 @@ nav .lightRay {
   margin-right: auto;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
-  background-image: radial-gradient(rgba(12, 12, 12, 0.111) 2px, transparent 0);
+  background-image: radial-gradient(rgba(12, 12, 12, 0.050) 2px, transparent 0);
   background-size: 30px 30px;
   background-position: -5px -5px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -2457,7 +2442,7 @@ nav .lightRay {
   color: #f0f0f0;
   padding-block: -6px;
   z-index: 1;
-  background-image:  #292929;
+  background-color:  #292929;
   border-radius: 12px;
 }
 
@@ -2469,42 +2454,6 @@ nav .lightRay {
   right: 0;
   z-index: -99999;
   transition: all .4s;
-}
-
-.line-moph::before {
-  transform: translate(0%, 0%);
-  width: 100%;
-  height: 100%;
-  background: #28282d;
-  border-radius: 10px;
-}
-
-.line-moph::after {
-  transform: translate(10px, 10px);
-  width: 35px;
-  height: 35px;
-  background: #ffffff15;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  border-radius: 50px;
-}
-
-.line-moph:hover::before {
-  transform: translate(5%, 20%);
-  width: 110%;
-  height: 110%;
-}
-
-.line-moph:hover::after {
-  border-radius: 10px;
-  transform: translate(0, 0);
-  width: 100%;
-  height: 100%;
-}
-
-.line-moph:active::after {
-  transition: 0s;
-  transform: translate(0, 5%);
 }
 
 .before\:absolute::before {
@@ -2883,8 +2832,8 @@ nav .lightRay {
     font-size: 21px;
   }
 
-  .md\:text-\[46px\] {
-    font-size: 46px;
+  .md\:text-\[24px\] {
+    font-size: 24px;
   }
 
   .md\:text-\[55px\] {
@@ -2993,10 +2942,6 @@ nav .lightRay {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
   .lg\:gap-12 {
     gap: 3rem;
   }
@@ -3019,8 +2964,8 @@ nav .lightRay {
     font-size: 24px;
   }
 
-  .lg\:text-\[52px\] {
-    font-size: 52px;
+  .lg\:text-\[28px\] {
+    font-size: 28px;
   }
 
   .lg\:text-\[72px\] {
@@ -3189,4 +3134,3 @@ nav .lightRay {
     line-height: 1.5rem;
   }
 }
-
