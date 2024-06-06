@@ -19,7 +19,7 @@ function moveSpotlight(target) {
 }
 
 links.forEach((link) => {
-  link.addEventListener("click", (e) => {
+  link.addEventListener("mouseover", (e) => {
     // Remove active class from the current active link
     if (currentActive) {
       currentActive.classList.remove("active");
