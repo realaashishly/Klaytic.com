@@ -818,6 +818,14 @@ video {
   margin-top: 8px;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .block {
   display: block;
 }
@@ -1353,6 +1361,10 @@ video {
 
 .text-right {
   text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .font-Montserrat {
@@ -2163,10 +2175,10 @@ nav .lightRay {
 }
 
 .hiw__icon-wrapper.flash {
-  background-image: url(https://assets-global.website-files.com/5837424ae11409586f837994/65de73c98c0a4cd802b6de96_59.svg);
-  background-position: 50%;
+  /* background-image: url(https://assets-global.website-files.com/5837424ae11409586f837994/65de73c98c0a4cd802b6de96_59.svg); */
+  /* background-position: 50%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
   width: 120px;
 }
 
@@ -2192,9 +2204,9 @@ nav .lightRay {
 }
 
 .hiw__icon-wrapper.thum {
-  background-image: url(https://assets-global.website-files.com/5837424ae11409586f837994/65de7bd8468ed677a5da9a2d_60.svg);
+  /* background-image: url(https://assets-global.website-files.com/5837424ae11409586f837994/65de7bd8468ed677a5da9a2d_60.svg);
   background-position: 50%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   background-size: contain;
 }
 
@@ -2956,8 +2968,8 @@ nav .lightRay {
     padding-right: 10rem;
   }
 
-  .lg\:pt-\[150px\] {
-    padding-top: 150px;
+  .lg\:pt-\[140px\] {
+    padding-top: 140px;
   }
 
   .lg\:text-\[24px\] {
@@ -3085,8 +3097,8 @@ nav .lightRay {
     padding-bottom: 3.5rem;
   }
 
-  .\32xl\:pt-\[180px\] {
-    padding-top: 180px;
+  .\32xl\:pt-\[140px\] {
+    padding-top: 140px;
   }
 
   .\32xl\:text-\[15px\] {
