@@ -637,10 +637,10 @@ nav .lightRay {
 }
 
 .hiw__icon-wrapper.finger {
-  /* background-image: url(https://assets-global.website-files.com/5837424ae11409586f837994/65de6fbe381ad6cc0f9b49d6_59.svg); */
+  /* background-image: url(https://assets-global.website-files.com/5837424ae11409586f837994/65de6fbe381ad6cc0f9b49d6_59.svg);
   background-position: 50%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
 }
 
 .hiw__icon-wrapper.scale {
@@ -687,9 +687,9 @@ nav .lightRay {
 }
 
 .hiw__icon-wrapper.thum {
-  /* background-image: url(https://assets-global.website-files.com/5837424ae11409586f837994/65de7bd8468ed677a5da9a2d_60.svg);
+  background-image: url(https://assets-global.website-files.com/5837424ae11409586f837994/65de7bd8468ed677a5da9a2d_60.svg);
   background-position: 50%;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
