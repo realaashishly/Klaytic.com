@@ -1,41 +1,42 @@
-gsap.registerPlugin(ScrollTrigger);
-const container = document.querySelector(".hero__images-wrapper");
+gsap.registerPlugin(ScrollTrigger)
+const container = document.querySelector('.hero__images-wrapper')
 
-const standardBtn = document.getElementById("standardBtn");
-const proBtn = document.getElementById("proBtn");
+const standardBtn = document.getElementById('standardBtn')
+const proBtn = document.getElementById('proBtn')
 
-const standardPrice = document.getElementById("standard-membership");
-const proPrice = document.getElementById("pro-membership");
+const standardPrice = document.getElementById('standard-membership')
+const proPrice = document.getElementById('pro-membership')
 
-const links = document.querySelectorAll("nav a");
-const light = document.querySelector("nav .spotLight");
-let currentActive = document.querySelector("nav a.active");
+const links = document.querySelectorAll('nav a')
+const light = document.querySelector('nav .spotLight')
+let currentActive = document.querySelector('nav a.active')
+
+var x = window.matchMedia('(max-width: 700px)')
 
 function moveSpotlight(target) {
-  // Adjust the size of the spotlight to match the target link
-  light.style.width = `${target.offsetWidth}px`;
-  // Center the spotlight over the target link
-  light.style.left = `${target.offsetLeft}px`;
+    // Adjust the size of the spotlight to match the target link
+    light.style.width = `${target.offsetWidth}px`
+    // Center the spotlight over the target link
+    light.style.left = `${target.offsetLeft}px`
 }
 
 links.forEach((link) => {
-  link.addEventListener("mouseover", (e) => {
-    // Remove active class from the current active link
-    if (currentActive) {
-      currentActive.classList.remove("active");
-    }
-    // Add active class to the clicked link
-    e.target.classList.add("active");
-    currentActive = e.target;
-    moveSpotlight(e.target);
-  });
-});
+    link.addEventListener('mouseover', (e) => {
+        // Remove active class from the current active link
+        if (currentActive) {
+            currentActive.classList.remove('active')
+        }
+        // Add active class to the clicked link
+        e.target.classList.add('active')
+        currentActive = e.target
+        moveSpotlight(e.target)
+    })
+})
 
 // Initialize the spotlight position based on the active link
 if (currentActive) {
-  moveSpotlight(currentActive);
+    moveSpotlight(currentActive)
 }
-
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   const navLinks = document.querySelectorAll(".floating-nav__link");
@@ -53,51 +54,59 @@ if (currentActive) {
 //   });
 // });
 
-let tl = gsap.timeline();
-tl.to(container, {
-  x: "-450px",
-  scrollTrigger: {
-    trigger: container,
-    start: "top bottom",
-    end: "+500px",
-    scrub: true,
-    // markers: true
-  },
-});
+function scrollHandler() {
+    if (!x.matches) {
+        let tl = gsap.timeline()
+        tl.to(container, {
+            x: '-450px',
+            scrollTrigger: {
+                trigger: container,
+                start: 'top bottom',
+                end: '+500px',
+                scrub: true,
+                // markers: true
+            },
+        })
+    }
+}
+
+x.addEventListener('change', function () {
+    scrollHandler(x)
+})
 
 function togglePro() {
-  proPrice.style.display = "block";
-  proBtn.classList.add("w--current");
-  standardPrice.style.display = "none";
-  standardBtn.classList.remove("w--current");
+    proPrice.style.display = 'block'
+    proBtn.classList.add('w--current')
+    standardPrice.style.display = 'none'
+    standardBtn.classList.remove('w--current')
 }
 
 function toggleStandard() {
-  proPrice.style.display = "none";
-  proBtn.classList.remove("w--current");
-  standardPrice.style.display = "block";
-  standardBtn.classList.add("w--current");
+    proPrice.style.display = 'none'
+    proBtn.classList.remove('w--current')
+    standardPrice.style.display = 'block'
+    standardBtn.classList.add('w--current')
 }
 
-const faqRows = document.querySelectorAll(".faq__row");
+const faqRows = document.querySelectorAll('.faq__row')
 
 faqRows.forEach((row) => {
-  const rowAnswer = row.querySelector(".faq__answer");
-  const rowArrow = row.querySelector(".faq__arrow");
+    const rowAnswer = row.querySelector('.faq__answer')
+    const rowArrow = row.querySelector('.faq__arrow')
 
-  row.addEventListener("click", () => {
-    const isAnswerVisible = rowAnswer.style.display !== "none";
+    row.addEventListener('click', () => {
+        const isAnswerVisible = rowAnswer.style.display !== 'none'
 
-    // Toggle answer visibility
-    if (isAnswerVisible) {
-      rowAnswer.style.display = "none";
-      rowArrow.style.transform = "rotate(0deg)";
-    } else {
-      rowAnswer.style.display = "block";
-      rowArrow.style.transform = "rotate(180deg)";
-    }
-  });
-});
+        // Toggle answer visibility
+        if (isAnswerVisible) {
+            rowAnswer.style.display = 'none'
+            rowArrow.style.transform = 'rotate(0deg)'
+        } else {
+            rowAnswer.style.display = 'block'
+            rowArrow.style.transform = 'rotate(180deg)'
+        }
+    })
+})
 
-proBtn.addEventListener("click", togglePro);
-standardBtn.addEventListener("click", toggleStandard);
+proBtn.addEventListener('click', togglePro)
+standardBtn.addEventListener('click', toggleStandard)

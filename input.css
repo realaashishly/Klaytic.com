@@ -585,7 +585,6 @@ nav .lightRay {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
   position: relative;
 }
 
