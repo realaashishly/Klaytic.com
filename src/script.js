@@ -45,7 +45,7 @@ function scrollHandler() {
     }
 }
 
-x.addEventListener('change', function () {
+x.addEventListener('scroll', function () {
     scrollHandler(x)
 })
 
